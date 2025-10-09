@@ -2726,9 +2726,6 @@ esiste.</block>
   <block id="f72ba1a3a498489a96fd8774bfa9ea9d" category="example-title">&lt;strong&gt; aggiornamento handlate &lt;/strong&gt;</block>
   <block id="f456a413d0506028374e871768a5f176" category="paragraph">Quando la versione di Kubernetes del cluster viene aggiornata a una versione supportata, l'operatore aggiorna automaticamente un'installazione di Astra Trident esistente e la modifica per garantire che soddisfi i requisiti della versione di Kubernetes.</block>
   <block id="d1aae6ea63eb5e7fe6a9fcea5f671406" category="admonition">Se il cluster viene aggiornato a una versione non supportata, l'operatore impedisce l'installazione di Astra Trident. Se Astra Trident è già stato installato con l'operatore, viene visualizzato un avviso per indicare che Astra Trident è installato su una versione di Kubernetes non supportata.</block>
-  <block id="c3b2fe84f143129d7a18ad12df229bc6" category="example-title">&lt;strong&gt; consente di gestire i cluster utilizzando BlueXP (in precedenza Cloud Manager) &lt;/strong&gt;</block>
-  <block id="fd1117c82327fbe8671f26e897ceb8f4" category="inline-link-macro">Astra Trident con BlueXP</block>
-  <block id="a76a1e164520105317267dc41b95e8ce" category="paragraph">Con <block ref="f8c16e8c21124ccc028d2db7fd32a98f" category="inline-link-macro-rx"></block>, È possibile eseguire l'aggiornamento alla versione più recente di Astra Trident, aggiungere e gestire classi di storage e connetterle agli ambienti di lavoro, nonché eseguire il backup di volumi persistenti utilizzando Cloud Backup Service. BlueXP supporta l'implementazione di Astra Trident utilizzando l'operatore Trident, manualmente o utilizzando Helm.</block>
   <block id="43e6c0a141c1737a96917c56c7e22a73" category="inline-link-macro">installazione di usf.&lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;</block>
   <block id="1a2de31d648d8c09e5c2a9257a5ad67b" category="paragraph">Se si dispone di un'implementazione esistente che deve essere aggiornata o se si desidera personalizzare in modo efficace l'implementazione, è necessario prendere in considerazione <block ref="e214bf159dbaf6573cfe15f1373b92db" category="inline-link-macro-rx"></block>. Questo è il metodo convenzionale per implementare Astra Trident.</block>
   <block id="4c24a3b9facf2ea9fc7ed2ca52dab45d" category="inline-link-macro">personalizzare l'installazione di soluzioni &lt;block ref="c67fd1b99934afa248dfeb285a9a4191" prefix=" " category='inline-code'/&gt;</block>
@@ -3044,10 +3041,6 @@ Funziona con Kubernetes non-Graged Node Shutdown (NGNS) per consentire agli ammi
   <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
   <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
   <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
-  <block id="cce172403b73af5c2a4e93081affcc7f" category="inline-link">Astra Trident 21.10</block>
-  <block id="606b9e83fb467a43b3065d4fd5037094" category="list-text"><block ref="606b9e83fb467a43b3065d4fd5037094" category="inline-link-rx"></block></block>
-  <block id="a93e9e44b7a375a4236260f5ff2b251e" category="inline-link">Astra Trident 21.07</block>
-  <block id="3830d427e146a8a64454dc373d9b1502" category="list-text"><block ref="3830d427e146a8a64454dc373d9b1502" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Note legali</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
@@ -3955,4 +3948,6 @@ Astra Trident</block>
   <block id="b6780b7b2561935ff862fe7126cde751" category="list-text"><block ref="b6780b7b2561935ff862fe7126cde751" category="inline-link-rx"></block></block>
   <block id="b9a641d903e611a87a5e68ac7fdb0b84" category="list-text">Trident AutoSupport non raccoglie né trasmette dati personali o di identificazione personale (PII). Viene fornito con un<block ref="173a360b412944768c2ab13e6c8fd1c7" category="inline-link-rx"></block> che non è applicabile all'immagine contenitore Trident stessa. Puoi saperne di più sull'impegno di NetApp nei confronti della sicurezza e della fiducia dei dati<block ref="d3cc55401bc8303e01c6b0c43ba0733f" category="inline-link-rx"></block>.</block>
   <block id="5ff83dbc70e496ea22b38ea61bb69f05" category="list-text">Guarda la demo su <block ref="c27441bbbe62adf51ae6ecec41fde8bd" category="inline-link-macro-rx"></block>.</block>
+  <block id="15eaa3bd461b989a50d54376e8b82942" category="example-title">&lt;strong&gt;Gestione del cluster Kubernetes tramite NetApp Console&lt;/strong&gt;</block>
+  <block id="28cfb8f261719a05032a41acccc32995" category="paragraph">Con Astra Trident tramite NetApp Console, puoi eseguire l'aggiornamento all'ultima versione di Astra Trident, aggiungere e gestire classi di archiviazione e connetterle agli ambienti di lavoro, nonché eseguire il backup di volumi persistenti utilizzando Cloud Backup Service. La console supporta la distribuzione Astra Trident tramite l'operatore Trident , manualmente o tramite Helm.</block>
 </blocks>
