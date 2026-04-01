@@ -40,8 +40,6 @@ sidebar:
     entries:
     - title: Novità
       url: "/trident-rn.html"
-    - title: Versioni precedenti
-      url: "/earlier-versions.html"
   - section: trident-concepts
   - section: trident-get-started
   - section: trident-managing-k8s

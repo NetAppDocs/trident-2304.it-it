@@ -2468,8 +2468,6 @@ Conferma che i servizi NFS/iSCSI sono disponibili sui nodi di lavoro.</block>
   <block id="d3889fc650fa47326b5f1d0c56f50970" category="inline-link-macro">Standard di sicurezza Pod</block>
   <block id="4e8effbd512bb14dbe10454c0f045ff2" category="paragraph">Un nuovo <block ref="305368b4f0d008a807e095ab9da58448" category="inline-link-macro-rx"></block> (PSS) è stata aggiunta la sezione che descrive i permessi abilitati da Astra Trident durante l'installazione.</block>
   <block id="278dc4a29aa2b881b9dc4b45a82929c5" category="section-title">Cambiamenti nel 22.04</block>
-  <block id="ba09ee47d11962c1ccd13d7e1f10e6c5" category="inline-link">Versioni precedenti della documentazione</block>
-  <block id="368b120a3b5f53a49dc3ab96ec9b8dbd" category="paragraph">NetApp continua a migliorare e migliorare i propri prodotti e servizi. Ecco alcune delle funzionalità più recenti di Astra Trident. Per le release precedenti, vedere<block ref="25da125dffad1d6323c21354bccf0203" category="inline-link-rx"></block>.</block>
   <block id="7072ec708b0ea7e3243747d8b79c0d20" category="admonition">Se si esegue l'aggiornamento da una release precedente di Trident e si utilizza Azure NetApp Files, il <block ref="d5189de027922f81005951e6efe0efd5" prefix="" category="inline-code"></block> il parametro di configurazione è ora un campo singleton obbligatorio.</block>
   <block id="cb60f101c87f3def78d0fef168389244" category="inline-link-macro">Numero GitHub 681</block>
   <block id="2901fba3b85d37ea6000d90e72366ba6" category="list-text">Analisi migliorata dei nomi degli iniziatori iSCSI. (<block ref="3947f141b94c1867221790f45a6ee173" category="inline-link-macro-rx"></block>)</block>
@@ -3018,20 +3016,6 @@ Funziona con Kubernetes non-Graged Node Shutdown (NGNS) per consentire agli ammi
   <block id="642bfa81920103d4177bb3fdf6f9186f" category="list-text"><block ref="642bfa81920103d4177bb3fdf6f9186f" category="inline-link-macro-rx"></block></block>
   <block id="93e8ba41e1ebcadc1338cc7f75109210" category="inline-link-macro">Creare ulteriori classi di storage.</block>
   <block id="daa40449d28fbb16d2bcd8a8434d05e6" category="list-text"><block ref="daa40449d28fbb16d2bcd8a8434d05e6" category="inline-link-macro-rx"></block></block>
-  <block id="34c4dac14496e9c45d92f345d9392fc8" category="summary">La documentazione relativa alle release precedenti di Astra Trident è disponibile nel caso in cui non si utilizzi la versione più recente.</block>
-  <block id="93168a8084b3e838d2932c4734bd234e" category="section-title">Versioni precedenti</block>
-  <block id="78038c97749fe61b1148a68a71c14a02" category="inline-link-macro">Ciclo di vita del supporto e della release di Astra Trident</block>
-  <block id="3a1fdf1059d780b17a5dd3ecba99371d" category="paragraph">Se non si utilizza Astra Trident 23.04, la documentazione per le release precedenti è disponibile in base a. <block ref="ec2082dc40596525d1bb212183949428" category="inline-link-macro-rx"></block>.</block>
-  <block id="4693b2393d80830cd4f198db20bf2b72" category="inline-link">Astra Trident 23.01</block>
-  <block id="cd494508ccf1cdc45163d6d9d0f401ff" category="list-text"><block ref="cd494508ccf1cdc45163d6d9d0f401ff" category="inline-link-rx"></block></block>
-  <block id="3fe5d266a33f137293c314a2e334b611" category="inline-link">Astra Trident 22.10</block>
-  <block id="9fefe9ff51badc61edd8a36c8240aa29" category="list-text"><block ref="9fefe9ff51badc61edd8a36c8240aa29" category="inline-link-rx"></block></block>
-  <block id="21d437ff7c8ceb5481603b5d2c05442a" category="inline-link">Astra Trident 22.07</block>
-  <block id="8a7908446b584a99ce1055c602a9c74e" category="list-text"><block ref="8a7908446b584a99ce1055c602a9c74e" category="inline-link-rx"></block></block>
-  <block id="c53358822905bb04d312060d1cb568af" category="inline-link">Astra Trident 22.04</block>
-  <block id="fdd380631ba8063e7b8f842282a01e40" category="list-text"><block ref="fdd380631ba8063e7b8f842282a01e40" category="inline-link-rx"></block></block>
-  <block id="4af8991c21dff2f779496b8350d1124b" category="inline-link">Astra Trident 22.01</block>
-  <block id="7669b0b69333e81c7c208aea3d1a3c6f" category="list-text"><block ref="7669b0b69333e81c7c208aea3d1a3c6f" category="inline-link-rx"></block></block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">Note legali</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">Le note legali forniscono l'accesso a dichiarazioni di copyright, marchi, brevetti e altro ancora.</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">Copyright</block>
@@ -3967,4 +3951,5 @@ Astra Trident</block>
   <block id="cd8b45d6d96bb528f04c3ce2788b337d" category="paragraph">Il seguente esempio importa un volume da 1GiB<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> denominato<block ref="47068649001b68b4aba2f4219a2f981b" prefix=" " category="inline-code"></block> dal backend<block ref="ac181edf7a7be1f8ae6a6b0ac4a71686" prefix=" " category="inline-code"></block> con modalità di accesso RWO impostata tramite annotazioni PVC:</block>
   <block id="6aa655b386a1e31c420fd6553ed2b4fc" category="paragraph">Il seguente esempio importa 1Gi<block ref="8321592ce24c8a122ecf26a63cfca407" prefix=" " category="inline-code"></block> volume denominato<block ref="a8aa3f9da25a5d21fdd26c0a26592e1e" prefix=" " category="inline-code"></block> dal backend<block ref="4bafc897a4f30b09156a60d3350c8819" prefix=" " category="inline-code"></block> con modalità di accesso RWO impostata tramite annotazioni PVC:</block>
   <block id="3a175f8153aad5b64492df6eadb5a5af" category="paragraph">I seguenti esempi mostrano come importare volumi gestiti e non gestiti:</block>
+  <block id="15bd21e4cb669eaf47cfec94c1119ed7" category="paragraph">NetApp migliora e perfeziona costantemente i suoi prodotti e servizi. Ecco alcune delle ultime funzionalità di Astra Trident. Per le versioni precedenti, consultare la documentazione delle versioni precedenti.</block>
 </blocks>
