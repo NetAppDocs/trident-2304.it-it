@@ -16,6 +16,7 @@ summary: 'È necessario installare e configurare i prerequisiti del protocollo n
 
 
 
+[[verify-the-requirements]]
 == Verificare i requisiti
 
 * Verificare che l'implementazione soddisfi tutti i requisiti di link:../trident-get-started/requirements.html["requisiti"].

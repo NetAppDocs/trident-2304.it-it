@@ -12,10 +12,11 @@ summary: Se state iniziando a utilizzare Kubernetes, utilizzate le istruzioni pe
 
 
 [role="lead"]
-NetApp fornisce un'immagine di laboratorio pronta all'uso che è possibile richiedere tramite link:https://www.netapp.com/us/try-and-buy/test-drive/index.aspx["Test drive di NetApp"^].
+NetApp fornisce un'immagine di laboratorio pronta all'uso che puoi richiedere tramite link:https://www.netapp.com/test-drives/["Test drive di NetApp"^].
 
 
 
+[[learn-about-the-test-drive]]
 == Scopri di più su Test Drive
 
 Il Test Drive offre un ambiente sandbox dotato di un cluster Kubernetes a tre nodi e Astra Trident installato e configurato. È un ottimo modo per familiarizzare con Astra Trident ed esplorarne le funzionalità.

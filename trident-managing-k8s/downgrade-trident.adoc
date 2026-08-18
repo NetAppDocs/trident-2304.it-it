@@ -16,6 +16,7 @@ Scopri i passaggi necessari per il downgrade a una versione precedente di Astra 
 
 
 
+[[when-to-downgrade]]
 == Quando eseguire il downgrade
 
 È possibile valutare la possibilità di eseguire il downgrade per diversi motivi, ad esempio:
@@ -31,12 +32,14 @@ Provare a eseguire il downgrade solo per una versione di Astra Trident eseguita 
 
 
 
+[[when-not-to-downgrade]]
 == Quando non eseguire il downgrade
 
 Non eseguire il downgrade a una release di Trident che utilizza `etcd` per mantenere lo stato (19.04 e versioni precedenti). Tutte le operazioni eseguite con la release corrente di Astra Trident non vengono riflesse dopo il downgrade. I PVS appena creati non sono utilizzabili quando si torna a una versione precedente. Le modifiche apportate a oggetti come backend, PVS, classi di storage e snapshot di volumi (create/aggiornate/eliminate) non sono visibili ad Astra Trident quando si torna a una versione precedente. Il ritorno a una versione precedente non interrompe l'accesso ai PVS già creati utilizzando la versione precedente, a meno che non siano stati aggiornati.
 
 
 
+[[downgrade-process-when-astra-trident-is-installed-by-using-the-operator]]
 == Processo di downgrade quando Astra Trident viene installato utilizzando l'operatore
 
 Per le installazioni eseguite con Trident Operator, il processo di downgrade è diverso e non richiede l'utilizzo di `tridentctl`.
@@ -49,6 +52,7 @@ Per le installazioni eseguite utilizzando l'operatore Trident, Astra Trident pu�
 
 
 
+[[downgrade-to-cluster-scoped-operator]]
 === Eseguire il downgrade all'operatore con ambito cluster
 
 Per eseguire il downgrade di Astra Trident a una release che utilizza l'operatore cluster-scoped, attenersi alla procedura indicata di seguito.
@@ -61,6 +65,7 @@ Per eseguire il downgrade di Astra Trident a una release che utilizza l'operator
 
 
 
+[[downgrade-to-namespace-scoped-operator]]
 === Eseguire il downgrade all'operatore con ambito spazio dei nomi
 
 Questa sezione riassume i passaggi necessari per il downgrade a una release Astra Trident compresa tra 20.07 e 20.10, che verrà installata utilizzando l'operatore con ambito namespace.
@@ -104,6 +109,7 @@ Astra Trident è stato disinstallato.
 
 
 
+[[downgrade-by-using-helm]]
 === Eseguire il downgrade utilizzando Helm
 
 Per eseguire il downgrade, utilizzare `helm rollback` comando. Vedere il seguente esempio:
@@ -114,6 +120,7 @@ helm rollback trident [revision #]
 ----
 
 
+[[downgrade-process-when-astra-trident-is-installed-by-using-tridentctl]]
 == Processo di downgrade quando Astra Trident viene installato mediante `tridentctl`
 
 Se Astra Trident è stato installato utilizzando `tridentctl`, il processo di downgrade prevede i seguenti passaggi. Questa sequenza illustra il processo di downgrade per passare da Astra Trident 21.07 a 20.07.

@@ -16,6 +16,7 @@ summary: 'È possibile configurare Azure NetApp Files (ANF) come backend per Ast
 
 
 
+[[considerations]]
 == Considerazioni
 
 * Il servizio Azure NetApp Files non supporta volumi inferiori a 100 GB. Astra Trident crea automaticamente volumi da 100 GB se viene richiesto un volume più piccolo.

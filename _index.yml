@@ -58,11 +58,11 @@ indexpage:
   - title: Blog e community
     links:
     - title: Blog di Astra
-      url: https://cloud.netapp.com/blog/topic/astra
+      url: https://www.netapp.com/blog/
     - title: Blog di Astra Trident
       url: https://netapp.io/persistent-storage-provisioner-for-kubernetes/
     - title: Hub Kubernetes
-      url: https://cloud.netapp.com/kubernetes-hub
+      url: https://www.netapp.com/console/
     - title: NetApp.io
       url: https://netapp.io/
     - title: Discordare

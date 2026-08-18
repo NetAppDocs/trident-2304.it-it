@@ -22,6 +22,7 @@ TIP: Per un elenco completo degli articoli per la risoluzione dei problemi, cons
 
 
 
+[[general-troubleshooting]]
 == Risoluzione dei problemi generali
 
 * Se il pod Trident non si accende correttamente (ad esempio, quando il pod Trident è bloccato in `ContainerCreating` con meno di due container pronti), in esecuzione `kubectl -n trident describe deployment trident` e. `kubectl -n trident describe pod trident-********-****` può fornire ulteriori informazioni. Ottenere i log di kubelet (ad esempio, via `journalctl -xeu kubelet`) può anche essere utile.
@@ -63,7 +64,7 @@ Installato con tridentctl::
 
 * È inoltre possibile ottenere i log di debug per ciascun backend includendo `debugTraceFlags` nella definizione di back-end. Ad esempio, Includi `debugTraceFlags: {“api”:true, “method”:true,}` Per ottenere chiamate API e attraversamenti dei metodi nei log di Trident. I backend esistenti possono avere `debugTraceFlags` configurato con un `tridentctl backend update`.
 * Quando si utilizza RedHat CoreOS, assicurarsi che `iscsid` è attivato sui nodi di lavoro e avviato per impostazione predefinita. Questa operazione può essere eseguita utilizzando OpenShift MachineConfigs o modificando i modelli di accensione.
-* Un problema comune che potresti incontrare quando usi Trident https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"] è quando i tenant e i client secrets provengono da una registrazione di app con autorizzazioni insufficienti. Per un elenco completo dei requisiti di Trident, consulta link:../trident-use/anf.html["Azure NetApp Files"] la configurazione.
+* Un problema comune che potresti incontrare quando usi Trident https://azure.microsoft.com/en-us/products/netapp/["Azure NetApp Files"^] è quando i tenant e i client secrets provengono da una registrazione di app con autorizzazioni insufficienti. Per un elenco completo dei requisiti di Trident, consulta link:./trident-use/anf.html["Azure NetApp Files"] la configurazione.
 * In caso di problemi con il montaggio di un PV su un container, assicurarsi che `rpcbind` è installato e in esecuzione. Utilizzare il gestore dei pacchetti richiesto per il sistema operativo host e verificare se `rpcbind` è in esecuzione. È possibile controllare lo stato di `rpcbind` eseguire un `systemctl status rpcbind` o equivalente.
 * Se un backend Trident segnala che si trova in `failed` stato nonostante abbia lavorato in precedenza, è probabile che sia causato dalla modifica delle credenziali SVM/admin associate al backend. Aggiornamento delle informazioni di back-end tramite `tridentctl update backend` O rimbalzare il pod Trident risolverà questo problema.
 * Se stai aggiornando il tuo cluster Kubernetes e/o Trident per utilizzare le snapshot dei volumi beta, assicurati che tutti i CRS di snapshot alfa esistenti siano completamente rimossi. È quindi possibile utilizzare `tridentctl obliviate alpha-snapshot-crd` Comando per eliminare i CRD snapshot alfa. Vedere https://netapp.io/2020/01/30/alpha-to-beta-snapshots/["questo blog"] comprendere i passaggi necessari per la migrazione delle snapshot alfa.
@@ -80,6 +81,7 @@ NOTE: Trident dovrà essere riconfigurato da zero.
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-the-operator]]
 == Risoluzione dei problemi di un'implementazione Trident non riuscita utilizzando l'operatore
 
 Se si sta implementando Trident utilizzando l'operatore, lo stato di `TridentOrchestrator` modifiche da `Installing` a. `Installed`. Se si osserva `Failed` e l'operatore non è in grado di eseguire il ripristino da solo, controllare i log dell'operatore eseguendo il seguente comando:
@@ -155,6 +157,7 @@ uno con la definizione modificata e precisa.
 
 
 
+[[troubleshooting-an-unsuccessful-trident-deployment-using-tridentctl]]
 == Risoluzione dei problemi di un'implementazione Trident non riuscita utilizzando `tridentctl`
 
 Per capire cosa è andato storto, è possibile eseguire di nuovo il programma di installazione utilizzando ``-d`` argomento, che attiverà la modalità di debug e ti aiuterà a capire qual è il problema:

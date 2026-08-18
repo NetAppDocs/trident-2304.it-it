@@ -16,6 +16,7 @@ Puoi integrare il file system Amazon FSX per NetApp ONTAP con Astra Trident per 
 
 
 
+[[requirements]]
 == Requisiti
 
 Oltre a link:../trident-get-started/requirements.html["Requisiti di Astra Trident"]Per integrare FSX per ONTAP con Astra Trident, sono necessari:
@@ -32,6 +33,7 @@ NOTE: Assicurati di seguire la procedura di preparazione del nodo richiesta per 
 
 
 
+[[ontap-san-and-nas-driver-integration]]
 == Integrazione dei driver ONTAP SAN e NAS
 
 
@@ -102,6 +104,7 @@ Dopo l'implementazione, è possibile creare un link:../trident-get-started/kuber
 
 
 
+[[prepare-to-provision-smb-volumes]]
 == Preparatevi al provisioning dei volumi SMB
 
 È possibile eseguire il provisioning dei volumi SMB utilizzando `ontap-nas` driver. Prima di completare <<Integrazione dei driver ONTAP SAN e NAS>> completare i seguenti passaggi.

@@ -16,6 +16,7 @@ A seconda della modalità di installazione di Astra Trident, esistono diverse op
 
 
 
+[[uninstall-by-using-helm]]
 == Disinstallare utilizzando Helm
 
 Se Astra Trident è stato installato utilizzando Helm, è possibile disinstallarlo utilizzando `helm uninstall`.
@@ -33,6 +34,7 @@ release "trident" uninstalled
 ----
 
 
+[[uninstall-by-using-the-trident-operator]]
 == Disinstallare utilizzando l'operatore Trident
 
 Se Astra Trident è stato installato utilizzando l'operatore, è possibile disinstallarlo eseguendo una delle seguenti operazioni:
@@ -62,6 +64,7 @@ WARNING: Considerare la cancellazione dei CRD solo quando si esegue una disinsta
 
 
 
+[[uninstall-by-using-tridentctl]]
 == Disinstallare utilizzando `tridentctl`
 
 Eseguire `uninstall` ingresso comando `tridentctl` Come segue per rimuovere tutte le risorse associate ad Astra Trident, ad eccezione dei CRD e degli oggetti correlati, semplificando l'esecuzione del programma di installazione per l'aggiornamento a una versione più recente.

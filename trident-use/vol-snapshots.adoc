@@ -24,6 +24,7 @@ NOTE: Non creare un controller di snapshot se si creano snapshot di volumi on-de
 
 
 
+[[step-1-create-a-volumesnapshotclass]]
 == Fase 1: Creare un `VolumeSnapshotClass`
 
 In questo esempio viene creata una classe di snapshot del volume.
@@ -44,6 +45,7 @@ Per ulteriori informazioni, fare riferimento al link:./trident-reference/objects
 
 
 
+[[step-2-create-a-snapshot-of-an-existing-pvc]]
 == Fase 2: Creare un'istantanea di un PVC esistente
 
 Questo esempio crea un'istantanea di un PVC esistente.
@@ -101,6 +103,7 @@ Il `Snapshot Content Name` Identifica l'oggetto VolumeSnapshotContent che fornis
 
 
 
+[[step-3-create-pvcs-from-volumesnapshots]]
 == Fase 3: Creazione di PVC da VolumeSnapshots
 
 In questo esempio viene creato un PVC utilizzando uno snapshot.
@@ -131,12 +134,14 @@ WARNING: Il PVC deve essere creato nello stesso namespace di ITS `dataSource`.
 
 
 
+[[deleting-a-pv-with-snapshots]]
 == Eliminazione di un PV con snapshot
 
 Quando si elimina un volume persistente con snapshot associate, il volume Trident corrispondente viene aggiornato a uno stato di eliminazione. Rimuovere le snapshot del volume per eliminare il volume Astra Trident.
 
 
 
+[[deploying-a-volume-snapshot-controller]]
 == Implementazione di un controller di snapshot di volume
 
 Se la distribuzione Kubernetes non include lo snapshot controller e i CRD, è possibile implementarli come segue.
@@ -168,6 +173,7 @@ NOTE: Se necessario, aprire `deploy/kubernetes/snapshot-controller/rbac-snapshot
 
 
 
+[[recover-volume-data-using-snapshots]]
 == Ripristinare i dati del volume utilizzando le snapshot
 
 La directory Snapshot è nascosta per impostazione predefinita per facilitare la massima compatibilità dei volumi con cui viene eseguito il provisioning mediante `ontap-nas` e. `ontap-nas-economy` driver. Attivare il `.snapshot` directory per ripristinare i dati direttamente dalle snapshot.
@@ -183,6 +189,7 @@ NOTE: Quando si ripristina una copia snapshot, la configurazione del volume esis
 
 
 
+[[related-links]]
 == Link correlati
 
 * link:../trident-concepts/snapshots.html["Snapshot dei volumi"]

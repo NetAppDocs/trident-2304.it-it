@@ -16,6 +16,7 @@ Il https://github.com/NetApp/trident/releases["Pacchetto di installazione Triden
 
 
 
+[[available-commands-and-options]]
 == Comandi e opzioni disponibili
 
 Per informazioni sull'utilizzo, eseguire `tridentctl --help`.
@@ -62,6 +63,7 @@ CAUTION: L'interfaccia REST di Trident può essere configurata per l'ascolto e l
 
 
 
+[[create]]
 == `create`
 
 È possibile utilizzare il `create` Comando per aggiungere una risorsa ad Astra Trident.
@@ -76,6 +78,7 @@ Opzione disponibile:
 
 
 
+[[delete]]
 == `delete`
 
 È possibile eseguire `delete` Comando per rimuovere una o più risorse da Astra Trident.
@@ -95,6 +98,7 @@ Opzioni disponibili:
 
 
 
+[[get]]
 == `get`
 
 È possibile eseguire `get` Comando per ottenere una o più risorse da Astra Trident.
@@ -119,6 +123,7 @@ Opzioni disponibili:
 
 
 
+[[images]]
 == `images`
 
 È possibile eseguire `images` Flag per stampare una tabella delle immagini container richieste da Astra Trident.
@@ -134,6 +139,7 @@ Allarmi:
 
 
 
+[[import-volume]]
 == `import volume`
 
 È possibile eseguire `import volume` Comando per importare un volume esistente in Astra Trident.
@@ -155,6 +161,7 @@ Allarmi:
 
 
 
+[[install]]
 == `install`
 
 È possibile eseguire `install` Flag per installare Astra Trident.
@@ -188,6 +195,7 @@ Allarmi:
 
 
 
+[[logs]]
 == `logs`
 
 È possibile eseguire `logs` Flag per stampare i log da Astra Trident.
@@ -209,6 +217,7 @@ Allarmi:
 
 
 
+[[send]]
 == `send`
 
 È possibile eseguire `send` Comando per inviare una risorsa da Astra Trident.
@@ -223,6 +232,7 @@ Opzione disponibile:
 
 
 
+[[uninstall]]
 == `uninstall`
 
 È possibile eseguire `uninstall` Flag per disinstallare Astra Trident.
@@ -238,6 +248,7 @@ Allarmi:
 
 
 
+[[update]]
 == `update`
 
 È possibile eseguire `update` Comandi per modificare una risorsa in Astra Trident.
@@ -252,6 +263,7 @@ Opzioni disponibili:
 
 
 
+[[upgrade]]
 == `upgrade`
 
 È possibile eseguire `upgrade` Comandi per aggiornare una risorsa in Astra Trident.
@@ -266,6 +278,7 @@ Opzione disponibile:
 
 
 
+[[version]]
 == `version`
 
 È possibile eseguire `version` contrassegni per stampare la versione di `tridentctl` E il servizio Running Trident.

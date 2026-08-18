@@ -16,9 +16,10 @@ summary: 'È possibile aggiornare facilmente un"installazione Astra Trident util
 
 
 
+[[upgrade-using-the-trident-operator]]
 == Eseguire l'aggiornamento utilizzando l'operatore Trident
 
-In genere, si consiglia di aggiornare Astra Trident utilizzando lo stesso metodo utilizzato per l'installazione originale. Revisione link:upgrade-trident.html#select-an-upgrade-method["Selezionare un metodo di aggiornamento"] Prima di tentare l'aggiornamento con l'operatore Trident.
+In genere, dovresti aggiornare Astra Trident usando lo stesso metodo che hai usato per installarlo la prima volta. Consulta link:upgrade-trident.html#upgrade-trident.html#step-3-select-an-upgrade-method["Selezionare un metodo di aggiornamento"] prima di provare ad aggiornare con l'operatore Trident.
 
 [IMPORTANT]
 ====
@@ -33,6 +34,7 @@ Quando si esegue l'aggiornamento da un'istanza di Astra Trident installata utili
 ====
 
 
+[[upgrade-a-cluster-scoped-trident-operator-installation]]
 == Aggiornare un'installazione di un operatore Trident con ambito cluster
 
 È possibile aggiornare un'installazione di un operatore Trident con ambito cluster. Tutte le versioni di Astra Trident 21.01 e successive utilizzano un operatore con ambito cluster.
@@ -77,6 +79,7 @@ L'operatore Trident identificherà un'installazione Astra Trident esistente e la
 
 
 
+[[upgrade-a-namespace-scoped-operator-installation]]
 == Aggiornare un'installazione dell'operatore con ambito namespace
 
 È possibile eseguire l'aggiornamento da un'istanza di Astra Trident installata utilizzando l'operatore namespace-scoped (versioni da 20.07 a 20.10) a un'installazione dell'operatore con ambito cluster.
@@ -97,7 +100,7 @@ Version:  v20.10.1
 ----
 +
 
-NOTE: Se viene visualizzato lo stato `Updating`, assicurarsi di risolverlo prima di procedere. Per un elenco dei possibili valori di stato, vedere https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-deploy-operator.html["qui"^].
+NOTE: Se lo stato mostra `Updating`, assicurati di risolverlo prima di procedere. Per un elenco dei possibili valori di stato, consulta link:../trident-get-started/kubernetes-deploy-operator.html["qui"^].
 
 . Creare il `TridentOrchestrator` CRD utilizzando il manifesto fornito con il programma di installazione di Trident.
 +
@@ -158,7 +161,7 @@ replicaset.apps/trident-csi-68d979fb85   1         1         1       105d
 ----
 
 
-. (Facoltativo) se è necessario modificare i parametri di installazione, aggiornare `TridentProvisioner` spec. Ciò può includere modifiche come la modifica: I valori per `tridentImage`, `autosupportImage`, repository di immagini privato e fornitura `imagePullSecrets`) dopo aver eliminato l'operatore con ambito dello spazio dei nomi e prima di installare l'operatore con ambito del cluster. Per un elenco completo dei parametri che è possibile aggiornare, fare riferimento a. link:https://docs.netapp.com/us-en/trident/trident-get-started/kubernetes-customize-deploy.html#configuration-options["opzioni di configurazione"].
+. (Opzionale) Se è necessario modificare i parametri di installazione, aggiorna la specifica  `TridentProvisioner`. Ciò può includere modifiche come la variazione di: i valori per  `tridentImage`,  `autosupportImage`, repository di immagini privato e la fornitura di  `imagePullSecrets`) dopo aver eliminato l'operatore con ambito namespace e prima di installare l'operatore con ambito cluster. Per un elenco completo dei parametri che possono essere aggiornati, consulta link:../trident-get-started/kubernetes-customize-deploy.html#configuration-options["opzioni di configurazione"].
 +
 [listing]
 ----
@@ -231,6 +234,7 @@ Version:                v23.04.0
 
 
 
+[[upgrade-a-helm-based-operator-installation]]
 == Aggiornare un'installazione basata su Helm
 
 Per aggiornare un'installazione basata su Helm, procedere come segue.
@@ -266,6 +270,7 @@ L'operatore Trident identificherà un'installazione Astra Trident esistente e la
 
 
 
+[[upgrade-from-a-non-operator-installation]]
 == Aggiornamento da un'installazione non eseguita dall'operatore
 
 È possibile eseguire l'aggiornamento all'ultima versione dell'operatore Trident da un `tridentctl` installazione.

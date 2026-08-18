@@ -16,6 +16,7 @@ Puoi installare Astra Trident usando `tridentctl`. Questo processo si applica al
 
 
 
+[[critical-information-about-astra-trident-23-04]]
 == Informazioni critiche su Astra Trident 23.04
 
 *È necessario leggere le seguenti informazioni critiche su Astra Trident.*
@@ -33,6 +34,7 @@ Utilizzo di configurazioni o utilizzo non multipathing di `find_multipaths: yes`
 ====
 
 
+[[install-astra-trident-using-tridentctl]]
 == Installare Astra Trident utilizzando `tridentctl`
 
 Revisione link:../trident-get-started/kubernetes-deploy.html["panoramica dell'installazione"] per assicurarsi di aver soddisfatto i prerequisiti di installazione e selezionato l'opzione di installazione corretta per il proprio ambiente.
@@ -69,6 +71,7 @@ kubectl run -i --tty ping --image=busybox --restart=Never --rm -- \
 ====
 
 
+[[step-1-download-the-trident-installer-package]]
 == Fase 1: Scaricare il pacchetto di installazione di Trident
 
 Il pacchetto di installazione di Astra Trident crea un pod Trident, configura gli oggetti CRD utilizzati per mantenere il proprio stato e inizializza i sidecar CSI per eseguire azioni come il provisioning e il collegamento di volumi agli host del cluster. Scaricare ed estrarre la versione più recente del programma di installazione Trident da link:https://github.com/NetApp/trident/releases/latest["La sezione _Assets_ su GitHub"^]. Aggiornare _<trident-installer-XX.XX.X.tar.gz>_ nell'esempio con la versione di Astra Trident selezionata.
@@ -81,6 +84,7 @@ cd trident-installer
 ----
 
 
+[[step-2-install-astra-trident]]
 == Fase 2: Installare Astra Trident
 
 Installare Astra Trident nello spazio dei nomi desiderato eseguendo `tridentctl install` comando. È possibile aggiungere ulteriori argomenti per specificare la posizione del Registro di sistema dell'immagine.
@@ -134,12 +138,14 @@ INFO Trident installation succeeded.
 ----
 
 
+[[verify-the-installation]]
 == Verificare l'installazione
 
 È possibile verificare l'installazione utilizzando lo stato di creazione del pod o. `tridentctl`.
 
 
 
+[[using-pod-creation-status]]
 === Utilizzo dello stato di creazione del pod
 
 È possibile verificare se l'installazione di Astra Trident è stata completata esaminando lo stato dei pod creati:
@@ -157,6 +163,7 @@ NOTE: Se il programma di installazione non viene completato correttamente oppure
 
 
 
+[[using-tridentctl]]
 === Utilizzo di `tridentctl`
 
 È possibile utilizzare `tridentctl` Per verificare la versione di Astra Trident installata.
@@ -173,6 +180,7 @@ NOTE: Se il programma di installazione non viene completato correttamente oppure
 ----
 
 
+[[sample-configurations]]
 == Configurazioni di esempio
 
 .Esempio 1: Abilitare Astra Trident per l'esecuzione sui nodi Windows
@@ -188,7 +196,7 @@ tridentctl install --windows -n trident
 .Esempio 2: Abilitare la forza di distacco
 [%collapsible%open]
 ====
-Per ulteriori informazioni sulla forza di distacco, fare riferimento a. link:..trident-get-started/kubernetes-customize-deploy.html["Personalizzare l'installazione dell'operatore Trident"].
+Per ulteriori informazioni sul distacco forzato, fai riferimento a link:kubernetes-customize-deploy.html["Personalizzare l'installazione dell'operatore Trident"].
 
 [listing]
 ----
@@ -197,6 +205,7 @@ tridentctl install --enable-force-detach=true -n trident
 ====
 
 
+[[whats-next]]
 == Cosa succederà
 
 Ora puoi link:kubernetes-postdeployment.html["creare un backend e una classe di storage, eseguire il provisioning di un volume e montare il volume in un pod"].

@@ -16,6 +16,7 @@ Astra Trident segue una cadenza di rilascio trimestrale, fornendo quattro releas
 
 
 
+[[considerations-before-upgrading]]
 == Considerazioni prima dell'aggiornamento
 
 Quando si esegue l'aggiornamento all'ultima release di Astra Trident, considerare quanto segue:
@@ -39,6 +40,7 @@ Quando si esegue l'aggiornamento all'ultima release di Astra Trident, considerar
 
 
 
+[[step-1-select-a-version]]
 == Fase 1: Selezionare una versione
 
 Le versioni di Astra Trident seguono una data-based `YY.MM` Convenzione di naming, dove "YY" è l'ultima cifra dell'anno e "MM" è il mese. I rilasci di punti seguono un `YY.MM.X` convention, dove "X" è il livello di patch. Selezionare la versione a cui eseguire l'aggiornamento in base alla versione da cui si sta eseguendo l'aggiornamento.
@@ -57,6 +59,7 @@ NOTE: Quando si esegue l'aggiornamento utilizzando l'operatore Trident su OpenSh
 
 
 
+[[step-2-determine-the-original-installation-method]]
 == Fase 2: Determinare il metodo di installazione originale
 
 In genere, è necessario eseguire l'aggiornamento utilizzando lo stesso metodo utilizzato per l'installazione iniziale, tuttavia è possibile link:../trident-get-started/kubernetes-deploy.html#moving-between-installation-methods["passare da un metodo di installazione all'altro"].
@@ -79,12 +82,14 @@ Per determinare la versione utilizzata per installare Astra Trident:
 
 
 
+[[step-3-select-an-upgrade-method]]
 == Fase 3: Selezionare un metodo di aggiornamento
 
 Esistono due metodi per aggiornare Astra Trident.
 
 
 
+[[when-to-upgrade-using-the-operator]]
 === Quando eseguire l'aggiornamento utilizzando l'operatore
 
 È possibile link:upgrade-operator.html["Eseguire l'aggiornamento utilizzando l'operatore Trident"] se:
@@ -110,14 +115,16 @@ WARNING: Non utilizzare l'operatore per aggiornare Trident se si utilizza un `et
 
 
 
+[[when-to-upgrade-using-tridentctl]]
 === Quando eseguire l'aggiornamento utilizzando `tridentctl`
 
 È possibile  Se in origine è stato installato Astra Trident usando `tridenctll'.
 
-`tridentctl` È il metodo convenzionale di installazione di Astra Trident e offre la maggior parte delle opzioni per coloro che richiedono una personalizzazione complessa. Per ulteriori informazioni, fare riferimento a. link:..trident-get-started/kubernetes-deploy.html#choose-your-installation-method["Scegliere il metodo di installazione desiderato"].
+`tridentctl` è il metodo convenzionale di installazione Astra Trident e offre il maggior numero di opzioni per chi necessita di personalizzazioni complesse. Per maggiori dettagli, consulta link:../trident-get-started/kubernetes-deploy.html#choose-your-installation-method["Scegliere il metodo di installazione desiderato"].
 
 
 
+[[changes-to-the-operator]]
 == Modifiche all'operatore
 
 La release 21.01 di Astra Trident ha introdotto modifiche architetturali per l'operatore:

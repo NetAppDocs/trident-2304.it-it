@@ -16,6 +16,7 @@ Dopo aver installato Astra Trident, è possibile procedere con la creazione di u
 
 
 
+[[step-1-create-a-backend]]
 == Fase 1: Creazione di un backend
 
 È ora possibile creare un backend che verrà utilizzato da Astra Trident per il provisioning dei volumi. A tale scopo, creare un `backend.json` che contiene i parametri necessari. I file di configurazione di esempio per diversi tipi di backend sono disponibili in `sample-input` directory.
@@ -46,6 +47,7 @@ Dopo aver risolto il problema, tornare all'inizio di questo passaggio e riprovar
 
 
 
+[[step-2-create-a-storage-class]]
 == Fase 2: Creazione di una classe di storage
 
 Kubernetes consente agli utenti di eseguire il provisioning dei volumi utilizzando le dichiarazioni di volumi persistenti (PVC) che specificano a. https://kubernetes.io/docs/concepts/storage/storage-classes/["classe di storage"^] per nome. I dettagli sono nascosti agli utenti, ma una classe di storage identifica il provisioning utilizzato per tale classe (in questo caso Trident) e il significato di tale classe per il provisioning.
@@ -109,6 +111,7 @@ basic-csi    csi.trident.netapp.io   15h
 ----
 
 
+[[step-3-provision-your-first-volume]]
 == Fase 3: Eseguire il provisioning del primo volume
 
 Ora sei pronto per eseguire il provisioning dinamico del tuo primo volume. Per eseguire questa operazione, creare un Kubernetes https://kubernetes.io/docs/concepts/storage/persistent-volumes["richiesta di volume persistente"^] (PVC).
@@ -129,6 +132,7 @@ basic     Bound     pvc-3acb0d1c-b1ae-11e9-8d9f-5254004dfdb7   1Gi        RWO   
 ----
 
 
+[[step-4-mount-the-volumes-in-a-pod]]
 == Fase 4: Montare i volumi in un pod
 
 Ora montiamo il volume. Lanceremo un pod nginx che monta il PV sotto `/usr/share/nginx/html`.
